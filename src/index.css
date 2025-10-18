@@ -12,3 +12,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.animatedButton{
+  animation-duration: 10s;
+}
