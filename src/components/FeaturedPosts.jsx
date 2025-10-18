@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Imageb from './ImageB'
+import Imageb from './Imageb'
 
 const FeaturedPosts = () => {
   return (
@@ -53,7 +53,7 @@ const FeaturedPosts = () => {
                 <Link to='/test' className='text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</Link>
                 </div>
             </div>
-            
+
             {/* Fourth */}
             <div className='lg:h-1/3 flex justify-between gap-4'>
                 <Imageb src="featured4.jpeg" alt="Featured Post" className="rounded-3xl object-cover w-1/3 aspect-video" />
