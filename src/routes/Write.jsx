@@ -1,6 +1,6 @@
 import { useUser } from "@clerk/clerk-react"
-// import 'react-quill/dist/quill.snow.css';
-
+import 'react-quill-new/dist/quill.snow.css';
+import ReactQuill from "react-quill-new"  
 const Write = () => {
 
   const {isLoaded, isSignedIn} = useUser()
@@ -14,14 +14,14 @@ const Write = () => {
   }
 
   return (
-    <div className=''>
-      <h1>Create a new Post</h1>
-      <form action="">
-        <button>Add a cover image</button>
-        <input type="text" placeholder="My Awesome Story" />
-        <div>
-          <label htmlFor="">Choose a category:</label>
-          <select name="cat" id="">
+    <div className='h-[calc(100vh-64px)] md:h-[calc(100vh-80px)] flex flex-col gap-6'>
+      <h1 className="text-xl font-light">Create a new Post</h1>
+      <form className="flex flex-col gap-6 flex-1 mb-6" >
+        <button className="p-2 w-max shadow-md rounded-xl text-sm text-gray-500 bg-white">Add a cover image</button>
+        <input className="text-4xl font-semibold bg-transparent outline-none" type="text" placeholder="My Awesome Story" />
+        <div className="flex items-center gap- 4">
+          <label htmlFor="" className="text-sm">Choose a category:</label>
+          <select name="cat" id="" className="p-2 rounded-xl shadow-md bg-white">
             <option value="general">General</option>
             <option value="web-design">Web Design</option>
             <option value="technology">Technology</option>
@@ -30,7 +30,9 @@ const Write = () => {
             <option value="travel">Travel</option>
           </select>
         </div>
-        <textarea name="desc" id="" placeholder="A Short Description" />
+        <textarea className="p-4 rounded-xl shadow-md bg-white" name="desc" id="" placeholder="A Short Description" />
+        <ReactQuill theme="snow" className="flex-1  rounded-xl shadow-md bg-white"  />
+        <button className="bg-blue-800 text-white font-medium rounded-xl mt-4 p-2 w-36">Send</button>
       </form>
     </div>
   )
