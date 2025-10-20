@@ -2,6 +2,7 @@ import Imageb from '../components/Imageb'
 import { Link}  from 'react-router-dom'
 import PostMenuActions from '../components/PostMenuActions'
 import Search from '../components/Search'
+import Comments from '../components/Comments'
 
 const SinglePostPage = () => {
   return (
@@ -32,7 +33,7 @@ const SinglePostPage = () => {
       {/* content  */}
       <div className='flex flex-col md:flex-row gap-8'>
         {/* text  */}
-        <div className="lg:text-lg flex flex-col gap-6 text-justify">
+        <div className="lg:text-lg flex flex-col gap-6 text-justify ">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat cum beatae,
              magni possimus quisquam aperiam odit, 
              laboriosam doloribus nostrum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde et voluptates eum! Ab, placeat ullam? Odit neque temporibus at exercitationem minus earum molestiae ab sunt, voluptate a dolorem, commodi quo.
@@ -85,7 +86,7 @@ const SinglePostPage = () => {
           </p>
         </div>
         {/* menu  */}
-        <div className="px-4 h-max sticky top-8">
+        <div className="px-4 h-max sticky top-8 ">
           <h1 className='mb-4 text-sm font-medium'>Author</h1>
           <div className='flex flex-col gap-4'>
             <div className='flex items-center gap-8'>
@@ -129,6 +130,8 @@ const SinglePostPage = () => {
           <Search />
         </div>
       </div>
+      {/* Comments  */}
+      <Comments />
     </div>
   )
 }
