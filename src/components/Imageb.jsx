@@ -1,6 +1,6 @@
 import { Image } from '@imagekit/react';
 
-const Imageb = ({  src, className, alt }) => {
+const Imageb = ({  src, className, alt, w, h }) => {
   const urlEndpoint = import.meta.env.VITE_IK_URL_ENDPOINT;
   return (
 
@@ -8,7 +8,13 @@ const Imageb = ({  src, className, alt }) => {
       src={src} alt={alt} className={className}
       loading = "lazy"
       lqip={{ active: true, quality: 20 }}
-      // width={w} height = {h} 
+      width={w} height = {h} 
+      transformation={[
+        {
+          width: w,
+          height: h,
+        },
+      ]}
       />
 
   );

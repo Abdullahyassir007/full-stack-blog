@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 
-import HomePage from './routes/HomePage.jsx'
+import HomePage from './routes/Homepage.jsx'
 import PostListPage from './routes/PostListPage.jsx'
 import SinglePostPage from './routes/SinglePostPage.jsx'
 import Write from './routes/Write.jsx'

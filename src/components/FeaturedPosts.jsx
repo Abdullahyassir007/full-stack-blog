@@ -9,7 +9,7 @@ const FeaturedPosts = () => {
         {/* First  */}
         <div className='w-full lg:w-1/2 flex flex-col gap-4'>
             {/* IMAGE  */}
-            <Imageb src="featured1.jpeg" alt="Featured Post" className="rounded-3xl object-cover" />
+            <Imageb src="featured1.jpeg" alt="Featured Post" className="rounded-3xl object-cover" w="895"/>
             {/* DETAILS  */}
             <div>
                 <h1 className='lg:text-lg font-semibold'>01.</h1>
