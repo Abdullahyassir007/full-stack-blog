@@ -86,7 +86,7 @@ const SinglePostPage = () => {
           </p>
         </div>
         {/* menu  */}
-        <div className="px-4 h-max sticky top-8 ">
+        <div className="px-4 h-max sticky top-20 ">
           <h1 className='mb-4 text-sm font-medium'>Author</h1>
           <div className='flex flex-col gap-4'>
             <div className='flex items-center gap-8'>

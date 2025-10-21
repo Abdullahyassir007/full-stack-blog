@@ -2,7 +2,7 @@ import Search from "./Search"
 import { Link } from "react-router-dom"
 const SideMenu = () => {
   return (
-    <div className='px-4 h-max sticky top-8'>
+    <div className='px-4 h-max sticky top-20'>
         <h1 className="mb-4 text-sm font-medium">Search</h1>
         <Search />
         <h1 className="my-4 text-sm font-medium">Filter
@@ -30,19 +30,19 @@ const SideMenu = () => {
             <Link to="/posts" className="bg-blue-800 text-white px-4 py-2 rounded-full">
                 All Posts
             </Link>
-            <Link to="/posts?category=web-design" className="hover:bg-blue-50 px-4 py-2 rounded-full">
+            <Link to="/posts?category=web-design" className="hover:bg-blue-200 px-4 py-2 rounded-full">
                 Web Design
             </Link>
-            <Link to="/posts?category=technology" className="hover:bg-blue-50 px-4 py-2 rounded-full">
+            <Link to="/posts?category=technology" className="hover:bg-blue-200 px-4 py-2 rounded-full">
                 Technology
             </Link>
-            <Link to="/posts?category=programming" className="hover:bg-blue-50 px-4 py-2 rounded-full">
+            <Link to="/posts?category=programming" className="hover:bg-blue-200 px-4 py-2 rounded-full">
                 Programming
             </Link>
-            <Link to="/posts?category=life-style" className="hover:bg-blue-50 px-4 py-2 rounded-full">
+            <Link to="/posts?category=life-style" className="hover:bg-blue-200 px-4 py-2 rounded-full">
                 Life Style
             </Link>
-            <Link to="/posts?category=travel" className="hover:bg-blue-50 px-4 py-2 rounded-full">
+            <Link to="/posts?category=travel" className="hover:bg-blue-200 px-4 py-2 rounded-full">
                 Travel
             </Link>
         </div>

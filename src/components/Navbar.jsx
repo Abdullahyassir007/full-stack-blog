@@ -12,7 +12,7 @@ const Navbar = () => {
 //   console.log("Image path:", path);
 //   console.log("Full URL:", `${urlEndpoint}${relPath}`);
   return (
-    <div className="w-full h-16 md:h-20 flex items-center justify-between ">
+    <div className="w-full bg-[#a6bfde]/90 h-16 sticky top-0 md:h-20 flex items-center justify-between ">
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-4 text-2xl font-bold">
    
@@ -27,7 +27,7 @@ const Navbar = () => {
                 {open ? "X" : <img src="/menu.png" alt = "menu" className='w-8 h-8'></img> }
             </div>
             {/* {MOBILE LINK LIST} */}
-            <div className={`w-full h-screen flex flex-col gap-8 font-medium text-gray-600 items-center justify-center absolute top-16 transition-all ease-in-out ${open ? "left-0" : "left-[100%]"}`}>
+            <div className={`w-full bg-[#a6bfde]/90 h-screen flex flex-col gap-8 font-medium text-gray-600 items-center justify-center absolute top-16 transition-all ease-in-out ${open ? "left-0" : "left-[100%]"}`}>
                 <Link to="/" className='text-lg'>Home</Link>
                 <Link to="/" className='text-lg'>Trending</Link>
                 <Link to="/" className='text-lg'>Most Popular</Link>
