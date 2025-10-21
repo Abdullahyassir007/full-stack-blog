@@ -5,6 +5,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "express": "5"
+    "express": "5",
+    "mongoose": "^8.19.2"
   }
 }
