@@ -7,17 +7,24 @@ import commentRouter from "./routes/comment.route.js"
 
 
 const app = express()
-console.log(process.env.test)
-console.log("Hello World")
+app.use(express.json())
 
-// app.get("/test",(req,res) => {
-//     res.status(200).send("it works")
-// })
 
 //user route
 app.use("/user", userRouter)
 app.use("/posts", postRouter)
 app.use("/comments", commentRouter)
+
+app.use((error,req,res,next) =>{
+
+  req.status(error.status || 500)
+  req.json({
+    message:error.message || "Something went wrong",
+    status:error.status,
+    stack:error.status,
+  }
+  )
+})
 
 app.listen(3000, () => {
   connectDB()
